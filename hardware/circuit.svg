@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="860" viewBox="0 0 1100 860"><rect width="1100" height="860" fill="#f8fafc"/>
+<text x="35" y="40" font-family="Arial,sans-serif" font-size="25" fill="#172554">SMART STREET LIGHT · PROPOSED REFERENCE CIRCUIT</text>
+<text x="35" y="70" font-family="Arial,sans-serif" font-size="16" fill="#172554">Arduino UNO R3 · three independent LED zones · not verified against original hardware</text>
+<rect x="40" y="200" width="240" height="420" rx="8" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="65" y="240" font-family="Arial,sans-serif" font-size="21" fill="#172554">ARDUINO UNO R3</text>
+<text x="35" y="118" font-family="Arial,sans-serif" font-size="18" fill="#172554">5V</text>
+<polyline points="45,130 1060,130" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="35" y="758" font-family="Arial,sans-serif" font-size="18" fill="#172554">GND</text>
+<polyline points="45,770 1060,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="65" y="280" font-family="Arial,sans-serif" font-size="16" fill="#172554">A0 → divider junction</text>
+<text x="65" y="320" font-family="Arial,sans-serif" font-size="16" fill="#172554">D2 ← IR 1 OUT</text>
+<text x="65" y="360" font-family="Arial,sans-serif" font-size="16" fill="#172554">D4 ← IR 2 OUT</text>
+<text x="65" y="400" font-family="Arial,sans-serif" font-size="16" fill="#172554">D7 ← IR 3 OUT</text>
+<text x="65" y="460" font-family="Arial,sans-serif" font-size="16" fill="#172554">D3 → LED 1 resistor</text>
+<text x="65" y="500" font-family="Arial,sans-serif" font-size="16" fill="#172554">D5 → LED 2 resistor</text>
+<text x="65" y="540" font-family="Arial,sans-serif" font-size="16" fill="#172554">D6 → LED 3 resistor</text>
+<text x="65" y="590" font-family="Arial,sans-serif" font-size="16" fill="#172554">5V → red supply rail</text>
+<text x="65" y="620" font-family="Arial,sans-serif" font-size="16" fill="#172554">GND → ground rail</text>
+<polyline points="370,130 370,185" fill="none" stroke="#dc2626" stroke-width="2"/>
+<rect x="330" y="185" width="80" height="65" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="348" y="223" font-family="Arial,sans-serif" font-size="16" fill="#172554">LDR</text>
+<polyline points="370,250 370,340" fill="none" stroke="#334155" stroke-width="2"/>
+<circle cx="370" cy="285" r="5" fill="#334155"/>
+<polyline points="370,285 465,285" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="402" y="275" font-family="Arial,sans-serif" font-size="16" fill="#172554">to A0</text>
+<rect x="330" y="340" width="80" height="60" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="343" y="376" font-family="Arial,sans-serif" font-size="16" fill="#172554">10 kΩ</text>
+<polyline points="370,400 370,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="310" y="440" font-family="Arial,sans-serif" font-size="14" fill="#172554">Dark → lower ADC</text>
+<rect x="515" y="190" width="150" height="150" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="535" y="222" font-family="Arial,sans-serif" font-size="16" fill="#172554">IR MODULE 1</text>
+<polyline points="540,130 540,190" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="527" y="245" font-family="Arial,sans-serif" font-size="14" fill="#172554">VCC = 5V</text>
+<text x="527" y="277" font-family="Arial,sans-serif" font-size="15" fill="#172554">OUT → D2</text>
+<text x="527" y="310" font-family="Arial,sans-serif" font-size="14" fill="#172554">GND</text>
+<polyline points="640,340 640,770" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="705" y="190" width="150" height="150" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="725" y="222" font-family="Arial,sans-serif" font-size="16" fill="#172554">IR MODULE 2</text>
+<polyline points="730,130 730,190" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="717" y="245" font-family="Arial,sans-serif" font-size="14" fill="#172554">VCC = 5V</text>
+<text x="717" y="277" font-family="Arial,sans-serif" font-size="15" fill="#172554">OUT → D4</text>
+<text x="717" y="310" font-family="Arial,sans-serif" font-size="14" fill="#172554">GND</text>
+<polyline points="830,340 830,770" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="895" y="190" width="150" height="150" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="915" y="222" font-family="Arial,sans-serif" font-size="16" fill="#172554">IR MODULE 3</text>
+<polyline points="920,130 920,190" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="907" y="245" font-family="Arial,sans-serif" font-size="14" fill="#172554">VCC = 5V</text>
+<text x="907" y="277" font-family="Arial,sans-serif" font-size="15" fill="#172554">OUT → D7</text>
+<text x="907" y="310" font-family="Arial,sans-serif" font-size="14" fill="#172554">GND</text>
+<polyline points="1020,340 1020,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="497" y="420" font-family="Arial,sans-serif" font-size="16" fill="#172554">D3 (PWM)</text>
+<polyline points="540,430 540,470" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="508" y="470" width="64" height="45" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="517" y="498" font-family="Arial,sans-serif" font-size="15" fill="#172554">1 kΩ</text>
+<polyline points="540,515 540,560" fill="none" stroke="#334155" stroke-width="2"/>
+<polygon points="522,560 558,560 540,592" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="521,594 559,594" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="540,594 540,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="569" y="581" font-family="Arial,sans-serif" font-size="15" fill="#172554">LED 1</text>
+<text x="490" y="632" font-family="Arial,sans-serif" font-size="14" fill="#172554">anode ↑</text>
+<text x="490" y="655" font-family="Arial,sans-serif" font-size="14" fill="#172554">cathode ↓</text>
+<text x="687" y="420" font-family="Arial,sans-serif" font-size="16" fill="#172554">D5 (PWM)</text>
+<polyline points="730,430 730,470" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="698" y="470" width="64" height="45" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="707" y="498" font-family="Arial,sans-serif" font-size="15" fill="#172554">1 kΩ</text>
+<polyline points="730,515 730,560" fill="none" stroke="#334155" stroke-width="2"/>
+<polygon points="712,560 748,560 730,592" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="711,594 749,594" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="730,594 730,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="759" y="581" font-family="Arial,sans-serif" font-size="15" fill="#172554">LED 2</text>
+<text x="680" y="632" font-family="Arial,sans-serif" font-size="14" fill="#172554">anode ↑</text>
+<text x="680" y="655" font-family="Arial,sans-serif" font-size="14" fill="#172554">cathode ↓</text>
+<text x="877" y="420" font-family="Arial,sans-serif" font-size="16" fill="#172554">D6 (PWM)</text>
+<polyline points="920,430 920,470" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="888" y="470" width="64" height="45" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="897" y="498" font-family="Arial,sans-serif" font-size="15" fill="#172554">1 kΩ</text>
+<polyline points="920,515 920,560" fill="none" stroke="#334155" stroke-width="2"/>
+<polygon points="902,560 938,560 920,592" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="901,594 939,594" fill="none" stroke="#334155" stroke-width="2"/>
+<polyline points="920,594 920,770" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="949" y="581" font-family="Arial,sans-serif" font-size="15" fill="#172554">LED 3</text>
+<text x="870" y="632" font-family="Arial,sans-serif" font-size="14" fill="#172554">anode ↑</text>
+<text x="870" y="655" font-family="Arial,sans-serif" font-size="14" fill="#172554">cathode ↓</text>
+<text x="35" y="815" font-family="Arial,sans-serif" font-size="16" fill="#172554">Every IR module shares 5V and GND. Each LED uses its own series resistor. USB powers the UNO.</text>
+<text x="35" y="840" font-family="Arial,sans-serif" font-size="14" fill="#172554">Small indicator LEDs only. Pin-labelled nets define connectivity; see hardware/wiring.md for exact terminals.</text>
+</svg>
