@@ -3,8 +3,9 @@
 ## Current status
 
 - New reference firmware and documentation: added.
-- Host control-logic tests: run locally; see commit delivery notes / Actions for results.
-- Full UNO target compile: use GitHub Actions or Arduino CLI; a host syntax check is not a substitute.
+- Host control-logic tests: **passed** locally and in GitHub Actions.
+- Full UNO target compile: **passed** using Arduino AVR core 1.8.6.
+- Verified run: [Verify firmware #1](https://github.com/Jayshah3309/fll-smart-street-light/actions/runs/39395680081), commit `9cf8376`, 20 October 2026. Both `host-tests` and `uno-build` succeeded. Runner annotations include action-runtime deprecation warnings; these did not fail the build.
 - Physical circuit, sensors, detection range, delay, power: **not tested**.
 - Original project compatibility: **not verified**.
 - Real prototype photo, demonstration video and simulator: **not supplied**.
