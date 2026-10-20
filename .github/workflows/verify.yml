@@ -1,0 +1,23 @@
+name: Verify firmware
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  host-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test control logic
+        run: |
+          g++ -std=c++11 -Wall -Wextra -Werror tests/control_test.cpp -o /tmp/streetlight-test
+          /tmp/streetlight-test
+  uno-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Install AVR core and compile
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr@1.8.6
+          arduino-cli compile --fqbn arduino:avr:uno --warnings all firmware/smart_street_light
